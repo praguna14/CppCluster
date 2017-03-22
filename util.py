@@ -11,4 +11,4 @@ def readFile(path):
         return data
     else:
         print("The path given: %s is not a valid path to a file.")
-        return -1
+        return None

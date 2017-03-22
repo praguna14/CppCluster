@@ -1,9 +1,12 @@
 """class for observation"""
-import pprint
+
 class observation(object):
-    data = []
+
     def __init__(self, data):
         self.data = data
+
+    def __eq__(self, other):
+        return self.__dict__ == other.__dict__
 
     def printData(self):
         print(self.data)
